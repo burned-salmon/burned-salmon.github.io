@@ -1,2 +1,2 @@
 # burned-salmon.github.io
-Github Pages for burned-salmon
+This is my Github Pages website. I hope it works!
