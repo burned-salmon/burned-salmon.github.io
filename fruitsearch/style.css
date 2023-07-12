@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.search-container {
+  margin-top: 10%;
+  width: 20%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid lime;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.search-container .suggestions, input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+ul li {
+  padding: 5px;
+}
+
+ul li:hover {
+  background-color: rgb(34, 193, 195, 1);
+}
