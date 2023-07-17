@@ -29,18 +29,20 @@ function searchHandler(e) {
 }
 
 function showSuggestions(results, inputVal) {
+	const inputLower = inputVal.toLowerCase();
+	const inputFirstCapital = inputLower.charAt(0).toUpperCase() + inputLower.slice(1);
 	// First, remove all current children
 	while (suggestions.firstChild) {
 		suggestions.removeChild(suggestions.firstChild);
 	}
-	results.forEach(function (value) {
-		const listItem = document.createElement("li");
-		//const highlight = document.createElement("b");
-		//highlight.innerText = inputVal;
-		//const highlighted = value.replaceAll(inputVal, highlight);
-		listItem.innerText = value;
-		suggestions.appendChild(listItem);
-	});
+
+	const fruitList = results.map((value) => {
+		const finalValue = value.replace(inputLower, inputLower.bold()).replace(inputFirstCapital, inputFirstCapital.bold());
+		return "<li>" + finalValue + "</li>";
+	}).join('');
+
+	suggestions.innerHTML = "<ul>" + fruitList + "</ul>"
+	suggestions.style.display = 'block'
 }
 
 function useSuggestion(e) {

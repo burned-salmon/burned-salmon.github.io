@@ -23,7 +23,7 @@ body {
 input {
   width: 100%;
   border: none;
-  border-bottom: 2px solid lime;
+  border-bottom: 2px solid rgb(34, 193, 195, 1);
   padding: 10px;
 }
 
@@ -38,6 +38,7 @@ input:focus {
 
 ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
   width: 100%;
 }
