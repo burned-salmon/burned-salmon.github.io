@@ -1,0 +1,10 @@
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px;
+}
+p {
+    margin-top: auto;
+    margin-bottom: auto;
+}

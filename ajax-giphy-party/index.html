@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title" class="text-center">Giphy Party!</h1>
+
+    <form>
+      <div class="input-group mb-3">
+
+        <button class="btn btn-outline-primary" type="submit" id="btn-add-gif">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <input type="text" class="form-control" id="search-text" placeholder="Add a GIF..." required>
+
+        <button class="btn btn-outline-danger" type="button" id="btn-remove-gifs">
+          <i class="fa-solid fa-trash"></i> Clear All GIFs
+        </button>
+
+      </div>
+    </form>
+
+
+
+    <hr>
+    <div class="row" id="gifs"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
